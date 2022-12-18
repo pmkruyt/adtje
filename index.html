@@ -1,6 +1,8 @@
 <html>
    <body>
-      <h1>My Data</h1>
-      {{ data|safe }}
+      {% for df in data %}
+      <p>Text between tables</p>
+      {{ df|safe }}
+   {% endfor %}
    </body>
 </html>
